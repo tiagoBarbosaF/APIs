@@ -1,0 +1,115 @@
+﻿@page
+@model IndexModel
+@{
+  ViewData["Title"] = "Home page";
+}
+
+<header class="mt-5 mb-5">
+  <div class="text-center">
+    <h1 class="display-4 fw-bold">Welcome</h1>
+    <p>We hope you like pizza. That's what we make here.</p>
+  </div>
+</header>
+<hr>
+
+<style>
+  div.button {
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: lightgray;
+    text-align: center;
+    padding: 10px;
+    margin: 50px;
+  }
+
+  input:optional {
+    border-color: #ccc;
+  }
+
+  input:required {
+    border-color: mediumblue;
+  }
+</style>
+
+<section class="text-center">
+  <h2 class="display-6 mt-5 fw-bold">Join our mailing list</h2>
+  <p class="fw-bold">Sign up to hear all our apecial offers!</p>
+
+  <form name="CustomerInfo">
+    <div class="mt-5 mb-5 container w-50 p-4 border border-dark rounded">
+      <div class="row pb-2">
+        <div class="col-4">
+          <label for="FirstName">First Name</label>
+        </div>
+        <div class="col-8">
+          <input type="text" id="FirstName" required />
+        </div>
+      </div>
+      <div class="row pb-2">
+        <div class="col-4">
+          <label for="LastName">Last Name</label>
+        </div>
+        <div class="col-8">
+          <input type="text" id="LastName" required />
+        </div>
+      </div>
+      <div class="row pb-2">
+        <div class="col-4">
+          <label for="Phone">Phone</label>
+        </div>
+        <div class="col-8">
+          <input type="tel" id="Phone" />
+        </div>
+      </div>
+      <div class="row pb-2">
+        <div class="col-4">
+          <label for="Birthday">Birthday</label>
+        </div>
+        <div class="col-8">
+          <input type="date" id="Birthday" />
+        </div>
+      </div>
+      <div class="row pb-4">
+        <div class="col-4">
+          <label for="E-mail">E-mail address</label>
+        </div>
+        <div class="col-8">
+          <input type="email" id="E-mail" required />
+        </div>
+      </div>
+      <div class="d-grid gap-2">
+        <input class="btn btm-block btn-outline-primary" type="submit" />
+      </div>
+    </div>
+  </form>
+</section>
+<hr>
+
+<section class="mt-5 mb-5 text-center">
+  <h2 class="fw-bold mb-5">All about our wonderful pizza!</h2>
+  <p class="fst-italic fs-5">
+    "We make it fresh every day, sometimes up to two or three times a day!"<br>
+    <span class="fw-bold">We love to make pizza!</span>
+  </p>
+</section>
+<hr>
+
+<section class="mt-5 mb-5">
+  <div class="text-center">
+    <img alt="" width="120" src="data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M.226 112L36.2.2c60 16 74 49 81 84z' fill='%23ea8'/%3e%3cpath d='M.197 112L31 14C84 29 96 57 103 88z' fill='%23fea' /%3e%3c/svg%3e"
+  </div>
+  <h2 class="fw-bold text-center">We take your privacy seriously!</h2>
+  <p class="fs-5 text-center">
+    Unlike other pizza restaurants thar share your pizza preferences. View our <a class="text-black"
+      href="/Privacy"><b>Privacy policy</b></a> for more information.
+  </p>
+
+  <h2 class="fw-bold mt-5">Delivery options</h2>
+  <p class="container w-50 fs-5">
+    There are a few ways we can get the pizza to you:<br />
+    - Postal mail<br />
+    - Dog sled<br />
+    - Drone (experimental!)
+  </p>
+</section>
